@@ -36,7 +36,11 @@
 
 .entry-header {
 	@include fill-parent;
-	background: #005ea5;
+	background-color: #005ea5;
+	background-image: url(../../images/head.jpg);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 	color: #fff;
 	padding: 20px 0;
 }
