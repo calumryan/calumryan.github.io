@@ -2,17 +2,9 @@
 
 
 - title: Home
-  url: /
+  url: /indieweb/
   type: nav-home
 
-- title: About
-  url: /about/
-  type: nav-normal
-
-- title: Articles
-  url: /articles/
-  type: nav-normal
-
-- title: Contact
-  url: /contact/
+- title: Search
+  url: /indieweb/search/
   type: nav-normal

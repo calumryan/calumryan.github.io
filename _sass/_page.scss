@@ -36,6 +36,9 @@
 
 .entry-header {
 	@include fill-parent;
+	background: #005ea5;
+	color: #fff;
+	padding: 20px 0;
 }
 
 /* tag listing in page header */
@@ -80,12 +83,13 @@ span + .entry-title {
 }
 
 .entry-title {
-	font-family: $alt-font;
-	font-style: italic;
+	//font-family: $alt-font;
+	//font-style: italic;
 	@include font-size(36,yes,36);
-	font-weight: 400;
-	letter-spacing: -3px;
-	line-height: 3.2rem;
+	font-weight: 600;
+	//letter-spacing: -3px;
+	line-height: 2.8rem;
+	margin: 0;
 
 	a {
 		color: $white;
@@ -106,7 +110,7 @@ span + .entry-title {
 .entry-wrapper {
 	@include outer-container;
 	margin-top: 0;
-	margin-bottom: 3em;
+	margin-bottom: 0;
 	padding-right: $gutter;
 	padding-left: $gutter;
 }
@@ -188,6 +192,8 @@ span + .entry-title {
 /* main content block */
 
 .entry-content {
+	padding-top: 50px;
+	padding-bottom: 50px;
 	@include span-columns(12);
 
 	p:first-child {

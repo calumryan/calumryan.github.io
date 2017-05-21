@@ -2,14 +2,14 @@
 <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Home | Introducing the IndieWeb</title>
-<meta name="description" content="">
+<title>Search | Introducing the IndieWeb</title>
+
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Home">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Search">
+
 <meta name="twitter:site" content="@tonbridigital">
 <meta name="twitter:creator" content="@tonbridigital">
 
@@ -19,16 +19,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_GB">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Home">
-<meta property="og:description" content="">
-<meta property="og:url" content="http://localhost:4000/indieweb/">
+<meta property="og:title" content="Search">
+
+<meta property="og:url" content="http://localhost:4000/indieweb/search/">
 <meta property="og:site_name" content="Introducing the IndieWeb">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/indieweb/">
+<link rel="canonical" href="http://localhost:4000/indieweb/search/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Introducing the IndieWeb Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -81,14 +81,8 @@
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 
 
-<header class="masthead masthead__big">
-	<div class="wrap">
 
-			<div class="masthead__tagline">Introducing the IndieWeb</div>
-			<svg class="masthead__logo" viewBox="0 0 70 30" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><title>IW</title><path d="M30.328 0L44.02 29.245l4.32-9.227L39.008 0h-8.68zM69.52 0H42.172l9 19.3 4.657 9.945L69.52 0z" fill="#ff5c00" fill-rule="nonzero"/><path fill="red" d="M0 0h27.314v7.645H0zm0 10.434h27.314V27.07H0z"/></svg>
-			<p class="masthead__excerpt">Clear, simple guides to taking greater control of your data on the Web</p>
-	</div>
-</header><!-- /.masthead -->
+
 
 <div class="js-menu-screen menu-screen"></div>
 
@@ -96,7 +90,11 @@
 <div id="main" role="main">
 
   
-
+  <header class="entry-header">
+    <div class="entry-wrapper">
+      <h1 class="entry-title">Search</h1>
+    </div>
+  </header>
   
 
   <article class="entry">
@@ -108,13 +106,26 @@
 
         <p></p>
 
-        <ul class="articles-navigation">
-  <li><div><h3><a href="/indieweb/content-management/">Managing and storing your content</a></h3><p>Mauris ullamcorper orci quis libero tincidunt, a placerat lectus iaculis. Nullam elementum nisi at rhoncus ultrices.</p></div></li>
-  <li><div><h3><a href="/indieweb/interaction/">Interaction with other people on the web</a></h3><p>Nulla pretium odio eu diam ultricies pharetra.</p></div></li>
-  <li><div><h3><a href="/indieweb/writing/">Writing your content</a></h3><p>Pellentesque orci nibh, venenatis quis aliquet at, malesuada et ligula. Fusce at tellus at magna aliquet volutpat. Nam rhoncus nibh non porttitor efficitur.</p></div></li>
-  <li><div><h3><a href="/indieweb/publishing/">Publishing what you write</a></h3><p>Sed ullamcorper tempor enim, eu rhoncus arcu hendrerit eu.</p></div></li>
-  <li><div><h3><a href="/indieweb/sharing/">Sharing your content with others and consuming what they share</a></h3><p>Duis id justo justo. Donec sodales ultrices urna, at eleifend nisi dignissim.</p></div></li>
-</ul>
+        <!-- Search form -->
+<form method="get" action="http://localhost:4000/search/" data-search-form="" class="simple-search">
+  <label for="q">Search Introducing the IndieWeb for:</label>
+  <input type="search" name="q" id="goog-wm-qt" placeholder="What are you looking for?" data-search-input="" autofocus="" />
+  <input type="submit" value="Search" id="goog-wm-sb" />
+</form>
+
+<!-- Search results placeholder -->
+<h6 data-search-found="">
+  <span data-search-found-count=""></span> result(s) found for &ldquo;<span data-search-found-term=""></span>&rdquo;.
+</h6>
+<ul class="post-list" data-search-results=""></ul>
+
+<!-- Search result template -->
+<script type="text/x-template" id="search-result">
+  <li><article>
+    <a href="##Url##">##Title## <span class="excerpt">##Excerpt##</span></a>
+  </article></li>
+</script>
+
 
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->

@@ -6,16 +6,16 @@
    Selections
    ========================================================================== */
 
-::-moz-selection {
-	background-color: lighten($base-color, 65%);
-	color: $base-color;
-	text-shadow: none;
-}
-::selection {
-	background-color: lighten($base-color, 65%);
-	color: $base-color;
-	text-shadow: none;
-}
+// ::-moz-selection {
+// 	background-color: lighten($base-color, 65%);
+// 	color: $base-color;
+// 	text-shadow: none;
+// }
+// ::selection {
+// 	background-color: lighten($base-color, 65%);
+// 	color: $base-color;
+// 	text-shadow: none;
+// }
 
 
 /*
@@ -61,7 +61,8 @@ li {
 /* headings */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $heading-font;
+	//font-family: $heading-font;
+	font-family: $base-font;
 	text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
@@ -74,11 +75,11 @@ h2 {
 }
 
 h3 {
-	@include font-size(28);
+	@include font-size(20);
 }
 
 h4 {
-	@include font-size(24);
+	@include font-size(20);
 }
 
 h5 {
@@ -105,9 +106,9 @@ a {
 	text-decoration: none;
 	color: $link-color;
 
-	&:visited {
-		color: lighten($link-color, 20);
-	}
+	// &:visited {
+	// 	color: lighten($link-color, 20);
+	// }
 
 	&:hover {
 		color: darken($link-color, 20);
@@ -242,7 +243,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 // Access and presentation
 // ---------------------------------------------------
 
-.visuallyhidden { 
+.visuallyhidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);

@@ -9,18 +9,33 @@
 {% include navigation.html %}
 
 <div id="main" role="main">
+
+  {% if page.logo != true %}
+  <header class="entry-header">
+    <div class="entry-wrapper">
+      <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+    </div>
+  </header>
+  {% else %}
+
+  {% endif %}
+
   <article class="entry">
 
     <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
-      </header>
+
+
       <div class="entry-content">
+
+        <p>{{ page.excerpt }}</p>
+
         {{ content }}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
   </article>
 </div><!-- /#main -->
+
+{% include take-part.html %}
 
 <div class="footer-wrapper">
   <footer role="contentinfo" class="entry-wrapper">

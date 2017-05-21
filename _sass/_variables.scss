@@ -20,14 +20,14 @@ body {
 
 // COLORS =====================================================
 $body-color               : #FFF;
-$text-color               : #FFF;
-$base-color               : #FFF;
+$text-color               : #000;
+$base-color               : #000;
 $comp-color               : adjust-hue($base-color, 180);
 $border-color             : #ddd;
 $white                    : #fff;
 $black                    : #000;
 $accent-color             : $black;
-$link-color               : #FFF;
+$link-color               : #ff5c00;
 $td                       : #ff5c00;
 
 $table-border-color       : $border-color;
