@@ -1,5 +1,6 @@
 {
-    "name": "Tonbridge Digital",
+    "name": "Introducing the IndieWeb",
+    "short_name": "Introducing the IndieWeb",
     "icons": [
         {
             "src": "/images/favicons/android-chrome-192x192.png",
@@ -12,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#870354",
+    "theme_color": "#ff5c00",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "minimal-ui",
 }
